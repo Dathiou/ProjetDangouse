@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/precedent"
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_marginTop="20px"
+        android:text=" Menu précédent  " />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_below="@id/precedent"
+        android:text="Choississez votre chanson :  " />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="20px"
+        android:divider="#242424"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+</LinearLayout>

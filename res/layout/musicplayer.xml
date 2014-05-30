@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+id/precedent"
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_marginTop="20px"
+        android:text=" Menu précédent  " />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/precedent"
+        android:layout_marginTop="20px"
+        android:text=" Chanson : " >
+    </TextView>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=" Reset! " >
+    </Button>
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/reset"
+        android:layout_toRightOf="@id/reset"
+        android:text=" Let&apos;s Dance! " >
+    </Button>
+
+    <Button
+        android:id="@+id/fft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/reset"
+        android:text=" FFt Powaaaaaa! " >
+    </Button>
+
+</RelativeLayout>

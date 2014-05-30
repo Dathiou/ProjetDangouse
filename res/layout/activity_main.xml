@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/textAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/age"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20px"
+        android:text="Âge : "
+        android:textColor="#FF0000"
+        android:textSize="17px"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20px"
+        android:layout_toRightOf="@id/textAge"
+        android:hint="Âge"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textCasque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/age"
+        android:layout_marginTop="20px"
+        android:text="Sélectionnez votre casque : "
+        android:textColor="#FF0000"
+        android:textSize="17px"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner_marque"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textCasque"
+        android:layout_marginTop="20px" />
+
+    <Spinner
+        android:id="@+id/spinner_model"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_marque"
+        android:layout_marginTop="10px"
+        android:hint="Sélectionner modèle" />
+
+    <Button
+        android:id="@+id/gogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_model"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30px"
+        android:text="Gogo" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gogo"
+        android:layout_marginLeft="10px"
+        android:layout_toRightOf="@id/gogo"
+        android:text="Next" />
+
+</RelativeLayout>
